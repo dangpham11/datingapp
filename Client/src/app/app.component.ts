@@ -6,8 +6,20 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'DatingApp';
+  users: any;
 
   constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
+    this.http.get('http://localhost:5169/api/Users').subscribe(
+      (response) => {
+        this.users = response;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
 }
