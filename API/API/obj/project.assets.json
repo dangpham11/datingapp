@@ -6577,11 +6577,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dangx\\Documents\\GitHub\\DatingApp\\datingapp\\API\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\dangx\\Documents\\GitHub\\datingapp\\API\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\dangx\\Documents\\GitHub\\DatingApp\\datingapp\\API\\API\\API.csproj",
+      "projectPath": "C:\\Users\\dangx\\Documents\\GitHub\\datingapp\\API\\API\\API.csproj",
       "packagesPath": "C:\\Users\\dangx\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dangx\\Documents\\GitHub\\DatingApp\\datingapp\\API\\API\\obj\\",
+      "outputPath": "C:\\Users\\dangx\\Documents\\GitHub\\datingapp\\API\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
