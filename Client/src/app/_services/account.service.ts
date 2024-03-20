@@ -19,7 +19,20 @@ export class AccountService {
       map((response: any) => {
         const user: User = response as User;
         if (user) {
+          localStorage.setItem('user', JSON.stringify(user));
           this.setCurrentUser(user);
+        }
+      })
+    );
+  }
+
+  register(model: any) {
+    return this.http.post(this.baseUrl + 'account/register', model).pipe(
+      map((response: any) => {
+        const user: User = response as User;
+        if (user) {
+          localStorage.setItem('user', JSON.stringify(user));
+          this.currentUserSource.next(user);
         }
       })
     );

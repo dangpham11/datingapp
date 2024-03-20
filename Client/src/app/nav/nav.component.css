@@ -2,3 +2,6 @@
 .dropdown-item {
   cursor: pointer;
 }
+.btn {
+  margin-left: 5px;
+}

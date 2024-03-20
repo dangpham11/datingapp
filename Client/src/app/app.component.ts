@@ -12,13 +12,9 @@ export class AppComponent implements OnInit {
   title = 'Dating App';
   users: any;
 
-  constructor(
-    private http: HttpClient,
-    private accountService: AccountService
-  ) {}
+  constructor(private accountService: AccountService) {}
 
   ngOnInit(): void {
-    this.getUsers();
     this.setCurrentUser();
   }
 
@@ -30,15 +26,5 @@ export class AppComponent implements OnInit {
     } else {
       console.log('User not found in localStorage');
     }
-  }
-  getUsers() {
-    this.http.get('https://localhost:7108/api/Users').subscribe(
-      (response) => {
-        this.users = response;
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
   }
 }

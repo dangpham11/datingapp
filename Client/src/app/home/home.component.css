@@ -1,0 +1,8 @@
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center button {
+  margin: 0 5px; /* Adjust the value to your desired spacing */
+}
