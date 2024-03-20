@@ -172,3 +172,5 @@ C:\Users\dangx\Documents\GitHub\datingapp\API\API\obj\Debug\net5.0\refint\API.dl
 C:\Users\dangx\Documents\GitHub\datingapp\API\API\obj\Debug\net5.0\API.pdb
 C:\Users\dangx\Documents\GitHub\datingapp\API\API\obj\Debug\net5.0\API.genruntimeconfig.cache
 C:\Users\dangx\Documents\GitHub\datingapp\API\API\obj\Debug\net5.0\ref\API.dll
+C:\Users\dangx\Documents\GitHub\datingapp\API\API\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\dangx\Documents\GitHub\datingapp\API\API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
