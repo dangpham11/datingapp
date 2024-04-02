@@ -35,8 +35,10 @@
         src="{{ user.photoUrl || './assets/user.png' }}"
         alt="{{ user.username }}"
       />
-      <a class="dropdown-toggle text-light ms-2" dropdownToggle
-        >Welcome {{ user.username | titlecase }}</a
+      <a
+        class="dropdown-toggle text-light text-decoration-none ms-2"
+        dropdownToggle
+        >Welcome {{ user.knownAs }}</a
       >
       <div class="dropdown-menu mt-3" *dropdownMenu>
         <div class="dropdown-item" routerLink="member/edit">Edit Profile</div>
