@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AccountService } from './_services/account.service';
 import { User } from './_models/user';
+import { PresenceService } from './_services/presence.service';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,10 @@ export class AppComponent implements OnInit {
   title = 'Dating App';
   users: any;
 
-  constructor(private accountService: AccountService) {}
+  constructor(
+    private accountService: AccountService,
+    private presence: PresenceService
+  ) {}
 
   ngOnInit(): void {
     this.setCurrentUser();
@@ -22,7 +26,10 @@ export class AppComponent implements OnInit {
     const userString: string | null = localStorage.getItem('user');
     if (userString) {
       const user: User = JSON.parse(userString);
-      this.accountService.setCurrentUser(user);
+      if (user) {
+        this.accountService.setCurrentUser(user);
+        this.presence.createHubConnection(user);
+      }
     } else {
       console.log('User not found in localStorage');
     }
